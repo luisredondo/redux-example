@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions/postActions';
+import '../index.css'
 
 class Posts extends Component {
     componentDidMount() {
@@ -16,15 +17,15 @@ class Posts extends Component {
 
     render() {
         const postItems = this.props.posts.map(post => (
-            <div key={post.id}>
-                <h3>{post.title}</h3>
+            <div key={post.id} className="post">
+                <h3>{post.title.toUpperCase()}</h3>
                 <p>{post.body}</p>
             </div>
         ));
 
         return (
             <div>
-                <h1>Posts</h1>
+                <h1>Posts</h1>                
                 { postItems }
             </div>
         )

@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.post {
+  background: #111;
+  margin: 15px 10px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.2s all ease;
+}
+
+.post:hover {
+  box-shadow: 1px 1px 2px 1px #45b588;
+}
+
+input, textarea {
+  border: none;
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 25px;
+}
+
+button[type="submit"] {
+  padding: 5px 15px;
+  border: 2px solid #45b588;
+  font-size: 25px;
+  background: #111;
+  color: #fff;
+  transition: 0.5s all ease;
+}
+
+button[type="submit"]:hover {
+  border: 2px solid red;
+}
+
